@@ -73,7 +73,7 @@ void mainCycle(){
 	int j;
 	remaining=wcnt;
 	while(remaining!=0){
-		for(j=0;j<=wcnt;j++){
+		for(j=0;j<wcnt;j++){
 			if (alang[j]!=NULL) refreshScreen(alang[j],(remaining*100)/wcnt,BEFORE);
 				else continue;
 			while ('\n' != getch());
